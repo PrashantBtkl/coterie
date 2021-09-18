@@ -1,6 +1,5 @@
-// Public facing Types
 import Principal "mo:base/Principal";
-
+// Public facing Types
 module {
     
     public type Property = {
@@ -11,6 +10,7 @@ module {
     public type List = {
         userID : Principal;
         name : Text;
+        category : Category;
         customProperty : [Property];
         rating : Nat;
     };
